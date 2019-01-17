@@ -1,0 +1,33 @@
+FROM debian:stretch-slim
+
+# set variables and locales
+ENV \
+    LANG="C.UTF-8"
+
+# install packages
+RUN apt-get update && \
+    DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y \
+    ca-certificates \
+    git \
+    python3 \
+    python3-can \
+    python3-serial \
+    python3-mysql.connector \
+    python3-pika \
+    python3-requests \
+    python3-urllib3 \
+    && rm -rf /var/lib/apt/lists/*
+
+# install pyHPSU
+RUN cd /opt \
+    && git clone https://github.com/Spanni26/pyHPSU.git \
+    && cd /opt/pyHPSU \
+    && chmod +x install.sh \
+    && sh install.sh
+
+# expose volume
+VOLUME /etc/pyHPSU
+
+COPY entrypoint.sh /
+RUN chmod +x /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
