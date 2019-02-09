@@ -4,7 +4,7 @@ This is the Docker container with [pyHPSU](https://github.com/Spanni26/pyHPSU). 
 
 Available für AMD64 and Arm32v7 (Raspberry PI) architecture.
 
-[![dockeri.co](http://dockeri.co/image/pdcemulator/pyhpsu-docker)](https://hub.docker.com/r/pdcemulator/pyhpsu/)
+[![dockeri.co](http://dockeri.co/image/pdcemulator/pyhpsu)](https://hub.docker.com/r/pdcemulator/pyhpsu/)
 
 ## Running from command line
 
