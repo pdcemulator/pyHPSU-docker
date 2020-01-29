@@ -1,4 +1,4 @@
-FROM debian:stretch-slim
+FROM debian:buster-slim
 
 # set variables and locales
 ENV \
@@ -12,7 +12,8 @@ RUN apt-get update && \
     python3 \
     python3-can \
     python3-serial \
-    python3-mysql.connector \
+    python3-mysqldb \
+    python3-paho-mqtt \
     python3-pika \
     python3-requests \
     python3-urllib3 \
