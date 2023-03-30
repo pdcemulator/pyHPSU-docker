@@ -1,6 +1,6 @@
 # pyHPSU Docker Container #
 
-This is the Docker container with [pyHPSU](https://github.com/Spanni26/pyHPSU). pyHPSU is a set of python scripts and other files to read and modify the values of the Rotex� HPSU. For more details about pyHPSU please see [project site](https://github.com/Spanni26/pyHPSU).
+This is the Docker container with [pyHPSU](https://github.com/Spanni26/pyHPSU). pyHPSU is a set of python scripts and other files to read and modify the values of the Rotex HPSU. For more details about pyHPSU please see [project site](https://github.com/Spanni26/pyHPSU).
 
 Available for AMD64 and Arm64/Arm32v7 (Raspberry PI) architecture.
 
